@@ -10,10 +10,11 @@ def my_each(array)
   # block is run n times (FAILED - 5)
   # only passes a single element into the block at a time
   # array.length - gives how many elements in an array
-
   index = 0
   while index < array.length
-    array[index]
+  yield(array[index]) 
     index+=1
-end
+
+
   end
+end
