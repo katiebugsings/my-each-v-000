@@ -12,9 +12,10 @@ def my_each(array)
   # array.length - gives how many elements in an array
   index = 0
   while index < array.length
-  yield(array[index]) 
+  yield(array[index])
     index+=1
 
 
   end
+  array
 end
